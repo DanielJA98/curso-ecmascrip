@@ -1,0 +1,16 @@
+{
+  "name": "curso-ecmascript",
+  "version": "1.0.0",
+  "description": "\"pruebas del curso\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javasrip",
+    "encmascript",
+    "curso"
+  ],
+  "author": "Daniel Jimenez <djimeneza7b2276@gmail>",
+  "license": "MIT"
+}
