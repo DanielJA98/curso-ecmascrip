@@ -1,2 +1,2 @@
 # curso-ecmascrip
-curso-platzo
+curso-platzi
