@@ -58,4 +58,7 @@ console.log(nameLet);
 //ejemplo de re-declaracion de variables
 var nameVar="soy var"
 let nameLet = "soy ley";
-let nameLet
+let frit 
+
+frit = 11;
+console.log(frit);
