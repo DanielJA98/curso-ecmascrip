@@ -6,7 +6,6 @@ function newUser(name, age, country) {
 }
 
 
-
 newUser();
 newUser("David", 15, "colombia");
 
@@ -40,3 +39,26 @@ function newAdmin(name = "ocar", age = 35, country = "cl") {
 
 newAdmin();
 newAdmin("miriam", 26, "mexico");
+
+
+//parametros por deault
+//funcion antes de ecma scrip6
+function persona(nombre, edad, pais){
+    nombre = nombre || "Daniel";
+    edad = edad || 25;
+    pais = pais || "Mexico";
+    console.log(nombre, edad, pais); 
+} 
+
+persona();
+persona("Luis", 28,"tlaxcala");
+
+//funcion con parametros predeterminados despues de ecmascrip6
+//se coloca desde la declaracion de los parametros 
+
+function people(name = "Jesus", age = 30, country = "MX"){
+    console.log(name, age, country);
+}
+
+people();
+people("David", 20, "colombia");
