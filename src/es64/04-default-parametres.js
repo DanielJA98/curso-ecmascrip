@@ -61,4 +61,4 @@ function people(name = "Jesus", age = 30, country = "MX"){
 }
 
 people();
-people("David", 20, "colombia");
+people("David", 20);
