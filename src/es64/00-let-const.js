@@ -40,11 +40,6 @@ console.log(prueba1);
 var nameVar ;
 console.log(nameVar);4
 
-let nameLet;
-console.log(nameLet);
-
-const varconsts = 1;
-const varconsts = 5;
 console.log(varconsts);
 
 // Asignación de variables

@@ -1,7 +1,7 @@
 //arrays destructuring
 
 let fruits = ["Apple", "Banana"];
-let [a, b] = fruits;
+let [d, c] = fruits;
 console.log(a, fruits[1]);
 
 // object destructuring
@@ -106,3 +106,30 @@ function solution(
 
 console.log(solution())
 // prueba para enviar a git
+
+
+// se crea el array 
+let frutas = ["Platano", "Manzana", "Pera", "Melon", "Sandia"];
+// se reasignan las variables para la nueva identificacion de los elementos del aray 
+// otra forma de llammar es por nombredelarray[#posicion a recuperar]
+let [Fruta1, Fruta2 , ...rest] = frutas;
+console.log(frutas[3]);
+
+// con objetos 
+// se crea el objeto 
+// fomas de acceder al valor variable declaradao por medio de usuario.name
+//nombredelojeto.nombredelainformacion
+let usuario = {name: "Daniel", edad: 25, ciudad: "tlaxcala"};
+let {name, edad, ciudad} = usuario;
+console.log(edad, name, usuario.edad);
+
+let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+
+const arr = [1, 2, 3];
+[arr[2], arr[1]] = [arr[1], arr[2]];
+console.log(arr); // [1, 3, 2]
