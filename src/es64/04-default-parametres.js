@@ -62,3 +62,37 @@ function people(name = "Jesus", age = 30, country = "MX"){
 
 people();
 people("David", 20);
+
+//spread operator 
+//crear variable como objeto 
+let persona = {edad: 13, nombre: "Daniel", ciudad: "teolocholco"};
+//nueva variable con indicador 
+let codigopostal = 90850;
+
+let datos = {...persona, codigopostal};
+console.log(datos);
+
+//colocar los datos en la misma variable, para ingresar los nuevos 
+
+let datos2 = {...persona, edad2: 3};
+console.log(datos2);
+
+//variables invertidad 
+let datos3 = {ead4: 19, ...persona};
+
+//utilizandolos en una  funcion 
+function restoperator (valor1, ...valores){
+    sum = valor1 + valores;
+    console.log(valores)
+    return sum + valor1
+}
+
+restoperator(1, 3, 5);
+
+function sum (num, ...values) {
+    console.log(values);
+    console.log(num + values);
+    return num +values[0];
+}
+
+sum(1, 1, 2, 3);

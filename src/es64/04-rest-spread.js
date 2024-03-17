@@ -10,22 +10,6 @@ let {username, age} = user;
 console.log(username, age);
 console.log(username, user.age);
 
-//spread operator 
-//funcion de propagation o de pasar los valores a un nuevo array 
-let person = {name: "oscar", age: 18};
-let country = "mx";
-
-let data = {...person, country, id: 3069403};
-console.log(data);
-console.log(person);
-
-//rest parametrer
-
-function sum(num, ...values){
-    console.log(values);
-    console.log(num + values[5]);
-}
-
 sum(78, 3, 4, 5, 10, 1, 2);
 
 //para strings 
@@ -118,7 +102,7 @@ console.log(frutas[3]);
 // con objetos 
 // se crea el objeto 
 // fomas de acceder al valor variable declaradao por medio de usuario.name
-//nombredelojeto.nombredelainformacion
+//nombredelobjeto.nombredelainformacion
 let usuario = {name: "Daniel", edad: 25, ciudad: "tlaxcala"};
 let {name, edad, ciudad} = usuario;
 console.log(edad, name, usuario.edad);
@@ -133,3 +117,7 @@ console.log(b); // 1
 const arr = [1, 2, 3];
 [arr[2], arr[1]] = [arr[1], arr[2]];
 console.log(arr); // [1, 3, 2]
+
+//spread operador (operador de propagación)
+//crear variable con un objeto 
+let person = {name: "Daniel", age: 12}
