@@ -88,11 +88,20 @@ function restoperator (valor1, ...valores){
 }
 
 restoperator(1, 3, 5);
+//... agarra los valores presentes y los agraga a la variable
 
 function sum (num, ...values) {
+    console.log(num);
     console.log(values);
-    console.log(num + values);
-    return num +values[0];
+    result = num + values[2];
+    console.log(result);
 }
 
 sum(1, 1, 2, 3);
+
+function suma(a, b, c) {
+    return a + b + c;
+}
+const numeros = [1, 2, 3, 4];
+const resultado = suma(...numeros);
+console.log(resultado);
