@@ -8,6 +8,21 @@ const anotherFunction = () => {
     })
 }
 
+const mypromises = new Promise((resolve, reject) => {
+    let prueba = false;
+    if(prueba){
+        resolve("heyy")
+    } else {
+        reject("whopps")
+    }
+});
+
+mypromises.then((resultado) => {
+    console.log(resultado)
+}).catch((error) => {
+    console.log(error)
+});
+
 anotherFunction()
     .then(Response => console.log(Response))
     .catch(err => console.log(err));
@@ -38,3 +53,45 @@ function getdata() {
     return data;
 }
 console.log(getdata());
+
+//promesa, resultado de una operacion asincrona 
+//pendiente 
+//cumplida
+//rechazada
+
+let miPromesa = new Promise((resolve, reject) => {
+    // realizar una operacion asincrona
+    let exito = false;
+    if (exito) {
+        resolve("operacion exitosa");
+    } else{
+        reject("operacion fallida");
+    }
+});
+
+console.log(miPromesa);
+//then y caht para atrapar valores cuando fallan y cuando no 
+
+miPromesa.then((resultado) => {
+    console.log(resultado);
+}).catch((error) => {
+    console.log(error);
+});
+
+//callback con funcion set timeout 
+
+setTimeout(function(){
+    console.log("hola despues de 3 segundos")
+}, 3000);
+
+//ejemplo de funcion asincronica con await
+async function obtenerdatos() {
+    let respuesta = await fetch('https://api.example.con/data');
+    let datos = await respuesta.json();
+    return datos;
+}
+
+async function ejemplo() {
+    let resultado = await miPromesa;
+    console.log(resultado);
+}
