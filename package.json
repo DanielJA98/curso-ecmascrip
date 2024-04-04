@@ -12,5 +12,6 @@
     "curso"
   ],
   "author": "Daniel Jimenez <djimeneza7b2276@gmail>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
