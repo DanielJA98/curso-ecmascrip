@@ -20,7 +20,7 @@ const mypromises = new Promise((resolve, reject) => {
 mypromises.then((resultado) => {
     console.log(resultado)
 }).catch((error) => {
-    console.log(error)
+    console.log(`siguiente ${error}`)
 });
 
 anotherFunction()
@@ -95,3 +95,15 @@ async function ejemplo() {
     let resultado = await miPromesa;
     console.log(resultado);
 }
+
+//operaciones sincronas linea por linea 
+
+//sincrono aunque sea una funcion separada 
+function makegreeting(name) {
+    return `¡Hola mi nombre es ${name}`;
+}
+
+const name = "Miriam"
+const greeting = `¡hola, mi nombre es ${name}`;
+console.log(greeting);
+
