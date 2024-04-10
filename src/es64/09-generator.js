@@ -13,3 +13,15 @@ console.log(it.next().value);
 console.log(it.next().value);
 console.log(it.next().value);
 console.log(it.next().value); //next es un metodo
+
+// Create a generator function with multiple yields
+function* generatorFunction() {
+    yield 'Neo'
+    yield 'Morpheus'
+    yield 'Trinity'
+  
+    return 'The Oracle'
+  }
+  
+  const generator = generatorFunction()
+  console.log(generador)
