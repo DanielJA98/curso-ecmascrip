@@ -22,6 +22,13 @@ function* generatorFunction() {
   
     return 'The Oracle'
   }
-  
-  const generator = generatorFunction()
-  console.log(generador)
+  export function* getId() {
+    let catID = 1;
+    while (true) {
+      yield catID++
+  }
+};
+const id = getId()
+id.next().value
+id.next().value
+id.next().value
